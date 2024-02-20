@@ -131,7 +131,7 @@ function build_extra_get_nodes() {
 
             if [[ "${repo}" == "https://github.com/kohya-ss/ControlNet-LLLite-ComfyUI" ]]; then
                 printf "Downloading additional model for LLLite node...\n"
-                provisioning_get_models "${path}/models" "${CUSTOM_NODE_LLLITE_MODELS[@]}"
+                build_extra_get_models "${path}/models" "${CUSTOM_NODE_LLLITE_MODELS[@]}"
             fi
         fi
     done
