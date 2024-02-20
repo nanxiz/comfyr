@@ -20,8 +20,7 @@ jobs:
 
   nvidia-base:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
+    permissions: write-all
     strategy:
       fail-fast: false
       matrix:
