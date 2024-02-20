@@ -27,7 +27,7 @@ jobs:
       matrix:
         base:
           - "pytorch"
-          - "jupyter-pytorch"
+          #- "jupyter-pytorch"
         python:
           - "3.10"
         pytorch:

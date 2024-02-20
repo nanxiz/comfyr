@@ -25,6 +25,7 @@ NODES=(
 
 CHECKPOINT_MODELS=(
     "https://huggingface.co/nanxiz/zcabnzh/resolve/main/vivid_model.safetensors"
+    "https://huggingface.co/nanxiz/zcabnzh/resolve/main/basic_model.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
@@ -65,6 +66,14 @@ CONTROLNET_MODELS=(
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_seg-fp16.safetensors"
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_sketch-fp16.safetensors"
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_style-fp16.safetensors"
+)
+
+CUSTOM_NODE_LLLITE_MODELS=(
+    "https://huggingface.co/nanxiz/zcabnzh/resolve/main/controlnetxlCNXL_bdsqlszMlsdV2.safetensors"
+)
+
+CUSTOM_NODE_ANIMATEDIFF_MODELS=(
+    #"https://huggingface.co/nanxiz/zcabnzh/resolve/main/v3_sd15_mm.ckpt"
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
@@ -118,6 +127,11 @@ function build_extra_get_nodes() {
             git clone "${repo}" "${path}" --recursive
             if [[ -e $requirements ]]; then
                 micromamba -n comfyui run ${PIP_INSTALL} -r "${requirements}"
+            fi
+
+            if [[ "${repo}" == "https://github.com/kohya-ss/ControlNet-LLLite-ComfyUI" ]]; then
+                printf "Downloading additional model for LLLite node...\n"
+                provisioning_get_models "${path}/models" "${CUSTOM_NODE_LLLITE_MODELS[@]}"
             fi
         fi
     done
