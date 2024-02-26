@@ -20,7 +20,7 @@ NODES=(
     "https://github.com/FlyingFireCo/tiled_ksampler"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/EllangoK/ComfyUI-post-processing-nodes"
-
+    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
 )
 
 CHECKPOINT_MODELS=(
