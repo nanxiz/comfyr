@@ -34,6 +34,8 @@ CHECKPOINT_MODELS=(
 LORA_MODELS=(
     "https://huggingface.co/nanxiz/zcabnzh/resolve/main/View360.safetensors"
     "https://huggingface.co/nanxiz/zcabnzh/resolve/main/MJ52.safetensors"
+    "https://huggingface.co/nanxiz/panfu/resolve/main/lora_8step.safetensors"
+    "https://huggingface.co/nanxiz/panfu/resolve/main/sdxl_lightning_2step_lora.safetensors"
 )
 
 VAE_MODELS=(
