@@ -24,8 +24,8 @@ NODES=(
 )
 
 CHECKPOINT_MODELS=(
-    "https://huggingface.co/nanxiz/zcabnzh/resolve/main/vivid_model.safetensors"
-    #"https://huggingface.co/nanxiz/zcabnzh/resolve/main/basic_model.safetensors"
+    #"https://huggingface.co/nanxiz/zcabnzh/resolve/main/vivid_model.safetensors"
+    "https://huggingface.co/nanxiz/zcabnzh/resolve/main/basic_model.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
@@ -35,7 +35,7 @@ LORA_MODELS=(
     "https://huggingface.co/nanxiz/zcabnzh/resolve/main/View360.safetensors"
     "https://huggingface.co/nanxiz/zcabnzh/resolve/main/MJ52.safetensors"
     "https://huggingface.co/nanxiz/panfu/resolve/main/lora_8step.safetensors"
-    "https://huggingface.co/nanxiz/panfu/resolve/main/sdxl_lightning_2step_lora.safetensors"
+    #"https://huggingface.co/nanxiz/panfu/resolve/main/sdxl_lightning_2step_lora.safetensors"
 )
 
 VAE_MODELS=(
