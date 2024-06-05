@@ -14,7 +14,7 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
     "https://github.com/kijai/ComfyUI-KJNodes"
     "https://github.com/theUpsider/ComfyUI-Logic"
-    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    #"https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
     "https://github.com/kohya-ss/ControlNet-LLLite-ComfyUI"
     "https://github.com/AIrjen/OneButtonPrompt"
     "https://github.com/FlyingFireCo/tiled_ksampler"
