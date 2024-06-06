@@ -16,6 +16,7 @@ class BaseHandler:
     INPUT_DIR=f"{os.environ.get('WORKSPACE')}/ComfyUI/input/"
     OUTPUT_DIR=f"/opt/ComfyUI/output/"
     
+    
     request_id = None
     comfyui_job_id = None
     
