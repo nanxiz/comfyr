@@ -15,4 +15,5 @@ storage_map["stable_diffusion/models/vae"]="/opt/ComfyUI/models/vae"
 storage_map["stable_diffusion/models/vae_approx"]="/opt/ComfyUI/models/upscale_models"
 storage_map["stable_diffusion/input"]="/opt/ComfyUI/input"
 
+
 # Add more mappings for other repository directories as needed
